@@ -1,7 +1,7 @@
 <?php
 
 $kobling = mysqli_connect(
-    "localhost",
+    "mysql",
     "momuh5460",
     "4ddbmomuh5460",
     "momuh5460"
