@@ -2,9 +2,9 @@
 
 $kobling = mysqli_connect(
     "localhost",
-    "root",
-    "",
-    "skole"
+    "momuh5460",
+    "4ddbmomuh5460",
+    "momuh5460"
 );
 
 if (!$kobling)
@@ -13,3 +13,4 @@ if (!$kobling)
 }
 
 ?>
+
