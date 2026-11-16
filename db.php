@@ -1,7 +1,7 @@
 <?php
 
 $kobling = mysqli_connect(
-    "mariadb",
+    "b-studentsql-1.usn.no",
     "momuh5460",
     "4ddbmomuh5460",
     "momuh5460"
