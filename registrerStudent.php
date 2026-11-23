@@ -12,9 +12,14 @@ if(isset($_POST["brukernavn"]))
     $sql = "INSERT INTO student
             VALUES('$brukernavn','$fornavn','$etternavn','$klassekode')";
 
-    mysqli_query($kobling,$sql);
-
+    if(mysqli_query($kobling,$sql))
+{
     echo "Student registrert!";
+}
+else
+{
+    echo "Brukernavnet finnes allerede.";
+}
 }
 
 ?>
