@@ -18,7 +18,8 @@ catch(mysqli_sql_exception $e)
 {
     echo "Klassen kan ikke slettes fordi den har registrerte studenter.";
 }
-
+        
+}
 ?>
 
 <!DOCTYPE html>
