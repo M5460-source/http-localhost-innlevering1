@@ -42,7 +42,9 @@ while($rad = mysqli_fetch_array($resultat))
 
 </select>
 
-<input type="submit" value="Slett">
+<input type="submit"
+       value="Slett"
+       onclick="return confirm('Er du sikker?')">
 
 </form>
 
