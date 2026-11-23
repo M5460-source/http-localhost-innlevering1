@@ -9,9 +9,14 @@ if(isset($_POST["klassekode"]))
     $sql = "DELETE FROM klasse
             WHERE klassekode='$klassekode'";
 
+    try
+{
     mysqli_query($kobling,$sql);
-
     echo "Klasse slettet!";
+}
+catch(mysqli_sql_exception $e)
+{
+    echo "Klassen kan ikke slettes fordi den har registrerte studenter.";
 }
 
 ?>
