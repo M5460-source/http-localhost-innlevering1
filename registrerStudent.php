@@ -22,7 +22,7 @@ catch(mysqli_sql_exception $e)
     echo "Brukernavnet finnes allerede.";
 }
 
-
+}  
 ?>
 
 <!DOCTYPE html>
