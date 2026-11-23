@@ -9,14 +9,9 @@ if(isset($_POST["brukernavn"]))
     $sql = "DELETE FROM student
             WHERE brukernavn='$brukernavn'";
 
- if(mysqli_query($kobling,$sql))
-{
-    echo "Klasse slettet!";
-}
-else
-{
-    echo "Klassen kan ikke slettes fordi den har registrerte studenter.";
-}
+mysqli_query($kobling,$sql);
+
+echo "Student slettet!";
 }
 
 ?>
